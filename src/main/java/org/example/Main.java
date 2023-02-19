@@ -14,9 +14,6 @@ public class Main {
         allToys.add(car);
         allToys.add(robot);
 
-//        for (Toy i: allToys) {
-//            System.out.println(i);
-//        }
         Toy.getAword(allToys, 10);
     }
 }

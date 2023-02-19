@@ -1,0 +1,10 @@
+Toy{name- 'Lamborghini', id - 2}
+Toy{name- 'Бамблби', id - 3}
+Toy{name- 'Lamborghini', id - 2}
+Toy{name- 'Lego', id - 1}
+Toy{name- 'Бамблби', id - 3}
+Toy{name- 'Lamborghini', id - 2}
+Toy{name- 'Бамблби', id - 3}
+Toy{name- 'Lego', id - 1}
+Toy{name- 'Lego', id - 1}
+Toy{name- 'Lego', id - 1}

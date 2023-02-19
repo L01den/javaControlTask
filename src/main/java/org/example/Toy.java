@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.*;
 import java.util.List;
 
 class Toy {
@@ -20,16 +21,20 @@ class Toy {
     }
     public static void getAword(List<Toy> toys, int n){
         int num;
-
+        String toy;
         for (int i = 0; i < n; i++) {
             num = (int)(Math.random()*100);
-            if(num >= 20){
-                System.out.println(toys.get(0));
+            if(num >= 0 && num <= 20){
+                toy = toys.get(0).toString();
+                System.out.println(toy);
             }else if(num >= 20 && num <= 40){
-                System.out.println(toys.get(1));
+                toy = toys.get(1).toString();
+                System.out.println(toy);
             } else{
-                System.out.println(toys.get(2));
+                toy = toys.get(2).toString();
+                System.out.println(toy);
             }
+            WorkFile.writeFile(toy);
         }
 
     }
@@ -45,7 +50,6 @@ class Toy {
     public void setName(String name) {
         this.name = name;
     }
-
     @Override
     public String toString() {
         return "Toy{" +
@@ -53,4 +57,6 @@ class Toy {
                 ", id - " + id +
                 '}';
     }
+
+
 }
